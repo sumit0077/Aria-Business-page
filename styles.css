@@ -1,0 +1,644 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+.mitul {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  color: #6e6565;
+}
+/* Main nav */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  padding: 10px;
+  z-index: 10;
+}
+/* list styling */
+.xyz ul {
+  padding-left: 20px; /* Add some padding to align with the text */
+  list-style-type: none; /* Hide default bullet */
+}
+
+.xyz ul li {
+  /* Add space for custom bullet */
+  position: relative;
+}
+
+.xyz ul li::before {
+  content: ""; /* Empty content */
+  position: absolute;
+  left: 0;
+  top: 0.4em; /* Adjust vertical alignment */
+  width: 0.8em; /* Adjust size of the square */
+  height: 0.8em; /* Adjust size of the square */
+  background-color: #6c1674; /* Custom color for the bullet */
+  transform: rotate(45deg);
+}
+
+.xyz ul li a {
+  color: black; /* Set text color */
+  text-decoration: none; /* Remove underline from links */
+}
+/* Space and other alignments in nav bar */
+.navBar div {
+  margin: 0 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.section {
+  background-image: url("./assets/bg.png");
+  background-size: cover; /* This ensures the image covers the entire element. */
+  background-position: center; /* This centers the image horizontally. */
+  background-repeat: no-repeat; /* This prevents the image from repeating. */
+  color: #ffffff; /* This sets the text color to white to ensure visibility against the image. */
+  text-align: center; /* This centers the text within the element. */
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* This adds some padding to separate the text from the edges. */
+}
+#introText {
+  font-size: 5em;
+  margin-bottom: 10px;
+}
+#intro {
+  font-size: 1.2em;
+}
+/* Logo alignments */
+.navBar .logo {
+  margin-right: auto;
+  justify-content: auto;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.navBar div:hover {
+  color: #9831a1; /* Change text color on hover */
+  /* You can add other styles for the hover effect */
+}
+
+.navBar div i {
+  font-size: 1.5em;
+}
+/* Body section */
+#mainContent {
+  font-size: 20px;
+}
+/*dynamic text property*/
+#introText {
+  #introText {
+    position: absolute;
+    top: 50%; /* This centers the text vertically within the element. */
+    left: 50%;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* This further centers the text within the element. */
+    color: #fff;
+    font-size: 3em;
+  }
+}
+
+/* Styling for the discover button */
+.section .discover {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #9831a1;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.section .discover:hover {
+  background-color: #ec8bec;
+}
+.about {
+  height: 100vh;
+}
+.about .heading {
+  color: #dd2eec;
+  text-align: center;
+  font-size: 30px;
+}
+.about .row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 90px;
+}
+/* .about .row .image {
+  text-align: center;
+  flex: 1 1 35rem;
+} */
+.about .row .image img {
+  margin: 4.5rem;
+  width: 40rem;
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+.about .row .image img:hover {
+  transform: scale(0.9);
+  filter: grayscale(100%);
+}
+.about .row .content {
+  /* display: flex; */
+  flex-direction: row;
+  justify-content: space-between; /* Align content at the top and bottom */
+  /* Other existing styles for .about .row .content */
+}
+/* .about .row .content h3 {
+  color: rgb(27, 27, 27);
+  font-size: 2.5rem;
+} */
+.about .row .content .tag {
+  font-size: 1.4rem;
+  color: #020133;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.about .row .content .box-container .box .p1 {
+  font-size: 1.5 rem;
+}
+.about .row .content .box-container {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.box-container {
+  display: flex;
+  flex-direction: row; /* Change from column to row */
+  justify-content: space-between; /* Distribute boxes evenly */
+}
+.box-container .box,
+.box-container .box1,
+.box-container .box2 {
+  margin-bottom: 10px;
+ margin-top: 50px;
+ margin-right: 20px;
+  /* Add spacing between boxes */
+}
+.xyz {
+  display: flex;
+  text-align: center;
+}
+.cont {
+  /* border: 2px solid; */
+  margin: 2px;
+}
+
+/* services styles*/
+.service-content button {
+  /* display: flex; */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* button */
+.servie-details {
+  display: flex;
+  align-items: end;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  background-color: #9831a1;
+  color: #fff;
+  border: none;
+}
+
+.servie-details:hover {
+  background-color: #da6cda;
+}
+
+.service-head {
+  text-align: center;
+}
+.xyz-img img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+/* revenew */
+.sub-content {
+  color: #999;
+}
+.upper {
+  display: flex;
+  padding-top: 200px;
+}
+.lower {
+  display: flex;
+}
+.rev-img img {
+  width: 50dvw;
+}
+.lower-content {
+  width: 50%;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+.upper-content {
+  width: 50%;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+/* testimonials */
+.Testimonials {
+  text-align: center;
+  padding-top: 100px;
+}
+.test-content {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.test-content img {
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50%);
+}
+/* contact css */
+.Contact {
+  display: flex; /* Or display: grid; */
+  height: auto;
+  background-color: #cc9fcc;
+  margin-top: 150px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* form styling  */
+.right form {
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.right form input[type="text"],
+.right form input[type="email"],
+.right form input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Placeholder text styling */
+.right form input[type="text"]::placeholder,
+.right form input[type="email"]::placeholder,
+.right form input[type="tel"]::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Focus styles */
+.right form input[type="text"]:focus,
+.right form input[type="email"]:focus,
+.right form input[type="tel"]:focus {
+  outline: none;
+  border-color: #c01c6e;
+}
+
+/* Checkbox and label */
+.right form input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+.right form label {
+  font-weight: normal;
+}
+/* projects */
+.projects {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  text-align: center;
+}
+.first-row img {
+  width: 250px;
+  height: 230px;
+  transition: transform 0.3s ease;
+}
+.first-row img:hover {
+  transform: scale(0.9);
+}
+.second-row img {
+  width: 250px;
+  height: 250px;
+  transition: transform 0.3s ease;
+}
+.second-row img:hover {
+  transform: scale(0.9);
+}
+
+/* Consultants */
+.Consultants {
+  justify-content: center;
+  text-align: center;
+  height: 70vh;
+  flex-direction: column;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+.person-info {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+.person-info img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.person-info img:hover {
+  transform: scale(0.9);
+}
+.logodaal {
+  font-size: 35px;
+  transition: transform 0.3s ease;
+}
+.logodaal i:hover {
+  transform: scale(0.8);
+}
+
+.box-container i {
+  font-size: 60px;
+}
+.box-container i:hover {
+  transform: scale(0.8);
+}
+.Consultants span {
+  color: black;
+  font-weight: 200;
+}
+
+/* formm csss */
+/* .fform {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fform form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fform label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.fform input[type="text"],
+.fform input[type="email"],
+.fform textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.fform textarea {
+  resize: vertical;
+}
+
+.fform button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fform button[type="submit"]:hover {
+  background-color: #0056b3;
+} */
+.about-1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.about-1 img {
+  width: 650px;
+  height: 450px;
+}
+.about-p {
+  margin-top: 100px;
+}
+
+/* end form */
+.end-form {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fdetails {
+  flex: 1;
+  padding: 20px;
+  margin: 20px;
+}
+
+.fform {
+  flex: 1;
+  padding: 20px;
+}
+
+.fform form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fform label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.fform input[type="text"],
+.fform input[type="email"],
+.fform textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.fform textarea {
+  resize: vertical;
+}
+
+.fform button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #9831a1;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fform button[type="submit"]:hover {
+  background-color: #c0579d;
+}
+/* form end vala format  */
+
+/* footer */
+.footer {
+  background-color: #d8b9d8;
+  margin-top: 50px;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.about-c {
+  display: flex;
+  padding: auto;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+.fo {
+  display: flex;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-1 {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.footerlogo {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+}
+
+.footerlogo i {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  animation: slide-in 2s ease-in-out infinite; /* Make the animation infinite */
+}
+
+.footerlogo i:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.footerlogo i:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+/* Add transition delays for other icons as needed */
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+  } /* Hide container initially */
+  to {
+    opacity: 1;
+  } /* Reveal container with icons */
+}
+.f-align {
+  margin-right: 15px;
+}
+/* scroll button */
+#scrollToTopBtn {
+  position: fixed; /* Keep button fixed on screen */
+  bottom: 20px; /* Position button at the bottom */
+  right: 30px; /* Position button on the right */
+  z-index: 99; /* Ensure button stays above other content */
+  border: none; /* Remove default button border */
+  outline: none; /* Remove outline on focus */
+  background-color: #9831a1; /* Blue color from Bootstrap */
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth appearance */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #000000; /* Darker background on hover */
+}
+#scrollToTopBtn i {
+  font-size: 20px;
+}
+/* contact li custom */
+.left ul {
+  padding-left: 0px; /* Add some padding to align with the text */
+  list-style-type: none; /* Hide default bullet */
+}
+
+.left ul li {
+  /* Add space for custom bullet */
+  position: relative;
+}
+
+.left ul li::before {
+  content: ""; /* Empty content */
+  position: absolute;
+  left: -25px;
+  top: 0.4em; /* Adjust vertical alignment */
+  width: 0.8em; /* Adjust size of the square */
+  height: 0.8em; /* Adjust size of the square */
+  background-color: #6c1674; /* Custom color for the bullet */
+  transform: rotate(45deg);
+}
+
+/* .left ul li a {
+  color: black; /* Set text color */
+  text-decoration: none; /* Remove underline from links */
+} */
