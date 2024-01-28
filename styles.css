@@ -61,6 +61,7 @@ p {
 }
 .section {
   background-image: url("./assets/bg.png");
+  opacity: 0.8;
   background-size: cover; /* This ensures the image covers the entire element. */
   background-position: center; /* This centers the image horizontally. */
   background-repeat: no-repeat; /* This prevents the image from repeating. */
