@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: "Roboto Mono", monospace;
   scroll-behavior: smooth;
+  background-color: #e2d5de;
 }
 
 .mitul {
@@ -22,7 +23,7 @@ p {
   top: 0;
   right: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #e2d5de;
   padding: 10px;
   z-index: 10;
 }
@@ -466,7 +467,7 @@ p {
   margin-bottom: 200px;
 }
 .about-1 img {
-  width: 650px;
+  width: auto;
   height: 450px;
 }
 .about-p {
@@ -534,7 +535,7 @@ p {
 
 /* footer */
 .footer {
-  background-color: #d8b9d8;
+  background-color: #cc9fcc;;
   margin-top: 50px;
   height: auto;
   padding-top: 50px;
